@@ -1,0 +1,8 @@
+mysite
+static
+login.html
+db.sqlite3
+manage.py
+static_cdn
+Pipfile
+Pipfile.lock
