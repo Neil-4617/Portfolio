@@ -1,10 +1,10 @@
 // Dependencies
-import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 
 // Styles
+import { AppbarContainer } from '../../styles/appbar'
 
 // Components
 import Logo from './Logo'
@@ -14,7 +14,7 @@ const pages = ["Home", "About", "Projects", "Blog"]
 
 const AppbarDesktop = () => {
 	return (
-		<AppBar>
+		<AppbarContainer>
 			<Toolbar
 				sx={{
 					display: 'flex',
@@ -43,7 +43,7 @@ const AppbarDesktop = () => {
 					}
 				</Box>
 			</Toolbar>
-		</AppBar>
+		</AppbarContainer>
 	)
 }
 

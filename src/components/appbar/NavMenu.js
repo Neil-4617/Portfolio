@@ -3,7 +3,7 @@ import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 
 // Style
-import { NavMenuContainer, NavButton } from '../../styles/Appbar'
+import { NavMenuContainer, NavButton } from '../../styles/appbar'
 
 // Context
 import { useUIContext } from '../../context'

@@ -4,6 +4,12 @@ import { styled } from '@mui/material/styles'
 import { Colors } from './theme'
 
 
+export const AppbarContainer = styled(Box)(() =>({
+	position: 'relative',
+	background: Colors.primary,
+	color: 'white'
+}))
+
 export const NavMenuContainer = styled(Box)(()=> ({
 	position: 'absolute',
 	top: 0,
