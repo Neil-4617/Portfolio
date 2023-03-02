@@ -6,7 +6,6 @@ import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 
 // Styles
-import { Colors } from '../../styles/theme'
 
 // Components
 import Logo from './Logo'
@@ -17,13 +16,12 @@ import { useUIContext } from '../../context'
 
 const AppbarMobile = () => {
 
-	const {setShowNavMenu} = useUIContext()
+	const {showNavMenu, setShowNavMenu} = useUIContext()
 
 	return (
 		
-			<AppBar 
-				position="static" 
-				color="primary"
+			<AppBar
+				position="relative" 
 				sx={{
 					maxHeight:"10vh"
 				}} 
@@ -38,8 +36,8 @@ const AppbarMobile = () => {
 					>
 					<Logo />
 					<Box>
-						<IconButton onClick = {() => setShowNavMenu(true) }>
-							<MenuIcon sx={{ color: Colors.secondary}} />
+						<IconButton color='secondary' sx={{visibility: showNavMenu ? 'hidden':'visible' }} onClick = {() => setShowNavMenu(!showNavMenu) }>
+							<MenuIcon />
 						</IconButton>
 					</Box>
 				</Toolbar>

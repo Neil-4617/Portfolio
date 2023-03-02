@@ -6,11 +6,12 @@ import { UIProvider } from '../context'
 
 
 // Styles
-import theme  from '../styles/theme'
+import theme  from '../assets/styles/theme'
 
 // Components
 import Appbar from './appbar/Appbar'
 import NavMenu from './appbar/NavMenu'
+import Banner from './banner/Banner'
 import Footer from './Footer'
 
 
@@ -25,13 +26,12 @@ const App = () => {
 						height: '100vh',
 						display: 'flex',
 						flexDirection: 'column'
-					}} 
-				>	
-				<Box>
+					}}>	
 					<Appbar />
-				</Box>
-					<Footer />
+				
 					<NavMenu />
+					<Banner />
+					<Footer />
 				</Box>
 			</UIProvider>
 		</ThemeProvider>

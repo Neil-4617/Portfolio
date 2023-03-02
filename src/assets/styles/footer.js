@@ -2,17 +2,18 @@ import { styled } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 
-import { Colors } from './theme'
 
 export const FooterCard = styled(Box)(()=> ({
+	display: 'flex',
+	flexDirection: 'column',
 	flex: 1,
-	background: Colors.primary,
 	color: 'white',
 }))
 
 export const CustomTF = styled(TextField)(()=> ({
+	margin: '0.5rem 0',
 	'.MuiInputBase-root': {
-		color: Colors.secondary,
+		color: 'white',
 	},
 	'.MuiOutlinedInput-input': {
 		color: 'white'

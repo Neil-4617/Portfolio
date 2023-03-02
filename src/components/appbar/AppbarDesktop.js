@@ -1,20 +1,20 @@
 // Dependencies
+import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 
 // Styles
-import { AppbarContainer } from '../../styles/appbar'
 
 // Components
 import Logo from './Logo'
 
 // Pages
-const pages = ["Home", "About", "Projects", "Blog"]
+const pages = ["Home", "Projects", "Contact", "Blog"]
 
 const AppbarDesktop = () => {
 	return (
-		<AppbarContainer>
+		<AppBar position='relative'>
 			<Toolbar
 				sx={{
 					display: 'flex',
@@ -35,7 +35,6 @@ const AppbarDesktop = () => {
 							<Button
 								key={page}
 								variant= 'h5'
-								color= 'white'
 							>
 							{page}
 							</Button>
@@ -43,7 +42,7 @@ const AppbarDesktop = () => {
 					}
 				</Box>
 			</Toolbar>
-		</AppbarContainer>
+		</AppBar>
 	)
 }
 

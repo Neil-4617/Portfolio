@@ -3,7 +3,7 @@ import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 
 // Style
-import { NavMenuContainer, NavButton } from '../../styles/appbar'
+import { NavMenuContainer, NavButton } from '../../assets/styles/appbar'
 
 // Context
 import { useUIContext } from '../../context'
@@ -18,7 +18,7 @@ const NavMenu = () => {
 
 	return (
 		<Slide direction = "down" in={showNavMenu} timeout={500} >
-			<NavMenuContainer>
+			<NavMenuContainer backgroundColor='secondary.main' color='white'>
 				{
 					pages.map((page) => (
 						<NavButton key={page}>{page}</NavButton>
@@ -26,8 +26,9 @@ const NavMenu = () => {
 				}
 				
 				<IconButton
-					sx={{ position: 'absolute', top: 10, right: 30 }} 
-					onClick = {() => setShowNavMenu(false)} >
+					color='primary' 
+					sx={{position: 'absolute', top: 10, right: 30 }} 
+					onClick = {() => setShowNavMenu(!showNavMenu)} >
 					<CloseIcon sx={{ fontSize: '2rem'}} />
 				</IconButton>
 			</NavMenuContainer>

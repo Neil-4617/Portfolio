@@ -1,14 +1,6 @@
 import Box from '@mui/material/Box'
 import { styled } from '@mui/material/styles'
 
-import { Colors } from './theme'
-
-
-export const AppbarContainer = styled(Box)(() =>({
-	position: 'relative',
-	background: Colors.primary,
-	color: 'white'
-}))
 
 export const NavMenuContainer = styled(Box)(()=> ({
 	position: 'absolute',
@@ -16,7 +8,6 @@ export const NavMenuContainer = styled(Box)(()=> ({
 	left: 0,
 	width: '100%',
 	height: '40%',
-	background: Colors.secondary,
 	display:'flex',
 	flexDirection: 'column',
 	justifyContent: 'space-evenly',
@@ -25,7 +16,6 @@ export const NavMenuContainer = styled(Box)(()=> ({
 }));
 
 export const NavButton = styled(Box)(()=> ({
-	color: Colors.primary,
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
