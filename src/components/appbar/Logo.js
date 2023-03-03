@@ -7,7 +7,6 @@ const Logo = () => {
 						sx={{ 
 							height:'50px',
 							py: '4px',
-							mt: '2px'
 						}}
 							src="./assets/images/Navbrand-Portfolio.svg" 
 							alt="Logo"

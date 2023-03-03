@@ -14,12 +14,16 @@ const pages = ["Home", "Projects", "Contact", "Blog"]
 
 const AppbarDesktop = () => {
 	return (
-		<AppBar position='relative'>
+		<AppBar 
+			position='relative' 
+			sx={{
+				px:'5rem', 
+			}}>
 			<Toolbar
 				sx={{
+					width: '100%',
 					display: 'flex',
 					justifyContent: 'space-between',
-					mx: '5rem'
 				}}
 
 				>

@@ -23,7 +23,6 @@ const AppbarMobile = () => {
 			<AppBar
 				position="relative" 
 				sx={{
-					maxHeight:"10vh",
 					px: '1rem', 
 				}} 
 				>

@@ -18,10 +18,15 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 const BannerMobile = () => {
 	return(
 		<>
+		<Box
+			sx={{
+				width:'100%',
+				display:'block',
+			}}>
 			{/*Hero Section*/}
 			<Box
 				sx={{
-					minHeight: '50vh',
+					height: '50vh',
 					width: '100%',
 					display: 'flex',
 					flexDirection: 'column',
@@ -47,28 +52,27 @@ const BannerMobile = () => {
 				</Box>
 			</Box>
 			{/*end of Hero Section*/}
+			
 			{/*Skills*/}
 			<Box
 				sx={{
 				height: 'auto',
-				backgroundColor: 'secondary.dark',
 				display: 'flex',
 				flexDirection: 'column',
-				justifyContent: 'center',
-				alignItems: 'center',
+				backgroundColor: 'secondary.dark',
+				textAlign: 'center',
 				py: '1rem',
 				}}>
 				<Typography sx={{ color: 'white' }} variant='h6' my='1rem'>Technologies</Typography>
-
 				<List>
 					<ListItem>
 						<ListItemIcon
-							sx={{
-								p: '1rem',
-								display:'flex',
-								justifyContent:'space-evenly',
-								gap: 2,
-							}}>
+						sx={{
+							pb: '0.5rem',
+							display:'flex',
+							gap: 3,
+							mx:'auto',
+						}}>
 							<Box component='img' src='../../assets/images/html-svgrepo-com.svg' alt='html image' height='30px'/>
 							<Box component='img' src='../../assets/images/css-svgrepo-com.svg' alt='css image'height='30px'/>
 							<Box component='img' src='../../assets/images/js-official-svgrepo-com.svg' alt='js image'height='30px'/>
@@ -78,15 +82,16 @@ const BannerMobile = () => {
 						</ListItemIcon>
 					</ListItem>
 				</List>
+				
 				<List>
 					<ListItem>
 						<ListItemIcon
-							sx={{
-								p: '1rem',
-								display:'flex',
-								justifyContent:'space-evenly',
-								gap: 2,
-							}}>
+						sx={{
+							pb: '0.5rem',
+							display:'flex',
+							gap: '0.75rem',
+							mx:'auto',
+						}}>
 							<Box component='img' src='../../assets/images/php-svgrepo-com.svg' alt='php image' height='30px'/>
 							<Box component='img' src='../../assets/images/blade-svgrepo-com.svg' alt='laravel image' height='30px'/>
 							<Box component='img' src='../../assets/images/mysql-logo-svgrepo-com.svg' alt='mySql image' height='30px'/>
@@ -102,10 +107,10 @@ const BannerMobile = () => {
 					<ListItem>
 						<ListItemIcon
 							sx={{
-								p: '1rem',
+								pb: '0.5rem',
 								display:'flex',
-								justifyContent:'space-evenly',
 								gap: 2,
+								mx: 'auto',
 							}}>
 							<Box component='img' src='../../assets/images/git-svgrepo-com.svg' alt='git image' height='30px'/>
 							<Box component='img' src='../../assets/images/gitlab-svgrepo-com.svg' alt='gitlab image' height='30px'/>
@@ -117,6 +122,7 @@ const BannerMobile = () => {
 				</List>
 			</Box>
 			{/*end of Skills Section*/}
+			
 			{/*Project Section*/}
 			<Box
 				sx={{
@@ -144,6 +150,7 @@ const BannerMobile = () => {
 							width: '80%',
 							minHeight: '80%',
 							mx: 'auto',
+							pb: '1.5rem',
 						}}>
 						<CardMedia
 							component='img'
@@ -157,8 +164,8 @@ const BannerMobile = () => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis orci a scelerisque purus semper. Sagittis orci a scelerisque purus semper eget duis. 
 							</Typography>
 						</CardContent>
-						<CardActions>
-							<Button size='small' variant='contained' >View</Button>
+						<CardActions sx={{justifyContent: 'center'}}>
+							<Button size='large' variant='contained' fullWidth>View</Button>
 						</CardActions>
 					</Card>
 					<Card
@@ -179,8 +186,8 @@ const BannerMobile = () => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis orci a scelerisque purus semper. Sagittis orci a scelerisque purus semper eget duis. 
 							</Typography>
 						</CardContent>
-						<CardActions>
-							<Button size='small' variant='contained' >View</Button>
+						<CardActions sx={{justifyContent: 'center'}}>
+							<Button size='large' variant='contained' fullWidth>View</Button>
 						</CardActions>
 					</Card>
 					<Card
@@ -201,13 +208,14 @@ const BannerMobile = () => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis orci a scelerisque purus semper. Sagittis orci a scelerisque purus semper eget duis. 
 							</Typography>
 						</CardContent>
-						<CardActions>
-							<Button size='small' variant='contained' >View</Button>
+						<CardActions sx={{justifyContent: 'center'}}>
+							<Button size='large' variant='contained' fullWidth>View</Button>
 						</CardActions>
 					</Card>
 				</Box>
 			</Box>
 			{/*end of Project Section*/}
+		</Box>
 		</>
 	)
 }

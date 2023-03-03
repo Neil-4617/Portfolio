@@ -25,11 +25,10 @@ const NavMenu = () => {
 					))
 				}
 				
-				<IconButton
-					color='primary' 
+				<IconButton 
 					sx={{position: 'absolute', top: 10, right: 30 }} 
 					onClick = {() => setShowNavMenu(!showNavMenu)} >
-					<CloseIcon sx={{ fontSize: '2rem'}} />
+					<CloseIcon  sx={{ fontSize: '2rem', color:'white'}} />
 				</IconButton>
 			</NavMenuContainer>
 		</Slide>

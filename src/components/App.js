@@ -15,8 +15,6 @@ import Banner from './banner/Banner'
 import Footer from './footer/Footer'
 
 
-
-
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
@@ -24,25 +22,18 @@ const App = () => {
 				<Box			
 					sx={{
 						width: '100vw',
+						height: '100vh',
+						display: 'flex',
+						flexDirection: 'column',
+						overflowY: 'scroll',
 					}}>	
 					<Appbar />
-				
 					<NavMenu />
 					<Banner />
 					<Footer />
 				</Box>
 			</UIProvider>
 		</ThemeProvider>
-		
-		/*
-			Appbar
-				Nav
-			Main Content
-			About
-			Projects
-			Blog
-			Footer
-		*/
 	)
 }
 
