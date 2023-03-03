@@ -12,7 +12,7 @@ import theme  from '../assets/styles/theme'
 import Appbar from './appbar/Appbar'
 import NavMenu from './appbar/NavMenu'
 import Banner from './banner/Banner'
-import Footer from './Footer'
+import Footer from './footer/Footer'
 
 
 
@@ -23,9 +23,7 @@ const App = () => {
 			<UIProvider>
 				<Box			
 					sx={{
-						height: '100vh',
-						display: 'flex',
-						flexDirection: 'column'
+						width: '100vw',
 					}}>	
 					<Appbar />
 				

@@ -18,12 +18,13 @@ const BannerDesktop = () => {
 		<>
 		{/*Hero Section*/}
 		<Box
-		sx={{
-			minHeight: '80vh',
-			display: 'flex',
-			justifyContent: 'center',
-			alignItems: 'center',
-		}}>
+			sx={{
+				minHeight: '80vh',
+				width: '100%',
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+			}}>
 			<Box 
 				sx={{
 				pr: '3rem',
@@ -33,12 +34,12 @@ const BannerDesktop = () => {
 			</Box>
 			<Box
 				sx={{
+					padding: '4rem',
 					height: '30%',
 					width: '20%',
 					backgroundColor: 'primary.main',
 				}}
-			/>
-			
+			/>			
 		</Box>
 		{/*end of Hero Section*/}
 
@@ -55,28 +56,8 @@ const BannerDesktop = () => {
 			gap: 1,
 			}}>
 			<Typography sx={{ color: 'white' }} variant='h4' my='2rem'>Technologies</Typography>
-			{/*
-				[x] html
-				[x] css
-				[x] js
-				[x] bootstrap
-				[x] react
 
-				[x] php
-				[x] laravel
-				[x] mysql
-				[x] express
-				[x] nodejs
-				[x] apollo 
-				[x] mongoDB
-				[x] grapql
-				[x] git
-				[x] gitlab
-				[x] github
-				[x] sublime text
-				[x] figma
-
-			*/}
+				
 				<List>
 					<ListItem>
 						<ListItemIcon
@@ -132,25 +113,28 @@ const BannerDesktop = () => {
 						</ListItemIcon>
 					</ListItem>
 				</List>
+				
 		</Box>
 		{/*end of Skills Section*/}
 
 		{/*Project Section*/}
 		<Box
 			sx={{
+				height: 'auto',
+				width: '100%',
+				backgroundColor: '#EBEBEB',
 				display: 'flex',
 				flexDirection: 'column',
-				maxHeight: '100vh',
 				alignItems: 'center',
-				py: '1rem ',
-				mb: '6rem'
+				pt: '1rem ',
+				pb: '6rem',
+				mx: 'auto',
 			}}>
 			<Typography my='3rem' variant='h4'>Projects</Typography>
 			<Box 
 				sx={{
 					display: 'flex',
 					justifyContent: 'space-evenly',
-					width: '85vw',
 				}}>
 				<Card
 					variant='outlined'
@@ -216,8 +200,6 @@ const BannerDesktop = () => {
 						<Button size='small' variant='contained' >View</Button>
 					</CardActions>
 				</Card>
-
-				
 			</Box>
 		</Box>
 		{/*end of Project Section*/}

@@ -4,6 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery'
 
 // components
 import BannerDesktop from './BannerDesktop'
+import BannerMobile from './BannerMobile'
 
 
 
@@ -16,7 +17,7 @@ const Banner = () => {
 		<>
 			{
 				matches 
-					? <div>Mobile view</div>
+					? <BannerMobile />
 					: <BannerDesktop />
 			}
 		</>

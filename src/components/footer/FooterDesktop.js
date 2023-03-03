@@ -1,3 +1,4 @@
+// Material UI
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
@@ -8,14 +9,11 @@ import MailIcon from '@mui/icons-material/Mail'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
-import { FooterCard, CustomTF } from '../assets/styles/footer'
+import { FooterCard, CustomTF } from '../../assets/styles/footer'
 
-
-const Footer = () => {
-	return (
-		<>
+const FooterDesktop = () => {
+	return(
 		<Box
-			minWidth = 'md'
 			backgroundColor = 'primary.dark'
 			sx={{
 				marginTop:'auto',
@@ -69,21 +67,7 @@ const Footer = () => {
 					
 			</FooterCard>
 		</Box>
-		<Box
-			backgroundColor= 'primary.dark'
-			borderTop= '2px solid #00356F'
-			sx={{
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-				py:'1.25rem',
-			}}>
-			<Typography variant='subtitle2' color='primary.light' >
-				Copyright &copy; 2023
-			</Typography>
-		</Box>
-		</>
 	)
 }
 
-export default Footer
+export default FooterDesktop

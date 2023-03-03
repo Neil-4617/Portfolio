@@ -23,12 +23,12 @@ const AppbarMobile = () => {
 			<AppBar
 				position="relative" 
 				sx={{
-					maxHeight:"10vh"
+					maxHeight:"10vh",
+					px: '1rem', 
 				}} 
 				>
 				<Toolbar
 					sx={{
-						mx: '1rem',
 						display: 'flex',
 						alignItems:'center',
 						justifyContent: 'space-between'
