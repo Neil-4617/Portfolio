@@ -1,4 +1,5 @@
 // Dependencies
+import {BrowserRouter} from 'react-router-dom'
 import { ThemeProvider } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 // Context
@@ -19,6 +20,7 @@ const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<UIProvider>
+				<BrowserRouter>
 				<Box			
 					sx={{
 						width: '100vw',
@@ -32,6 +34,7 @@ const App = () => {
 					<Banner />
 					<Footer />
 				</Box>
+				</BrowserRouter>
 			</UIProvider>
 		</ThemeProvider>
 	)
