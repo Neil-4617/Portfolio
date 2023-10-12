@@ -2,14 +2,12 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import Button from '@mui/material/Button'
-import SendIcon from '@mui/icons-material/Send'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import MailIcon from '@mui/icons-material/Mail'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
-import { FooterCard, CustomTF } from '../../assets/styles/footer'
+import { FooterCard } from '../../assets/styles/footer'
 
 const FooterDesktop = () => {
 	return (

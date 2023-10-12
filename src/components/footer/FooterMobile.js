@@ -7,7 +7,7 @@ import MailIcon from '@mui/icons-material/Mail'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
-import { FooterCard, CustomTF } from '../../assets/styles/footer'
+import { FooterCard } from '../../assets/styles/footer'
 
 const FooterMobile = () => {
 	return(

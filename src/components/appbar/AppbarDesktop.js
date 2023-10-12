@@ -1,14 +1,9 @@
 // Dependencies
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
 
 // Components
 import Logo from './Logo'
-
-// Pages
-const pages = ["Home", "Projects", "Contact", "Blog"]
 
 const AppbarDesktop = () => {
 	return (

@@ -1,22 +1,16 @@
 // Dependencies
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import Box from '@mui/material/Box'
-import IconButton from '@mui/material/IconButton'
-import MenuIcon from '@mui/icons-material/Menu'
 
 // Styles
 
 // Components
 import Logo from './Logo'
 
-// context
-import { useUIContext } from '../../context'
 
 
 const AppbarMobile = () => {
 
-	const {showNavMenu, setShowNavMenu} = useUIContext()
 
 	return (
 		
