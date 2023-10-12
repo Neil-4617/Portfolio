@@ -4,6 +4,7 @@ import {useEffect} from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 
+import photo1 from '../../assets/images/photo1.jpg'
 import '../../assets/styles/index.css'
 
 // component
@@ -54,6 +55,7 @@ const BannerDesktop = () => {
 					height:'80vh',
 					width: '100%',
 					display: 'flex',
+					gap: 5,
 					justifyContent: 'center',
 					alignItems: 'center',
 				}}>
@@ -67,16 +69,17 @@ const BannerDesktop = () => {
 				<Box
 					sx={{
 						padding: '1rem',
-						height: '30%',
 						width: '20%',
-						backgroundColor: 'primary.main',
-					}}
-				>
+					}}>
 					<Box 
 						component='img'
+						src={photo1}
 						alt="mark_neil image"
+						sx={{
+							width: '100%',
+						}}
 					/>
-				</Box>		
+				</Box>					
 			</Box>
 			{/*end of Hero Section*/}
 

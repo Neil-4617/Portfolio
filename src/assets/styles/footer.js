@@ -6,7 +6,6 @@ import TextField from '@mui/material/TextField'
 export const FooterCard = styled(Box)(()=> ({
 	display: 'flex',
 	flexDirection: 'column',
-	flex: 1,
 	color: 'white',
 }))
 

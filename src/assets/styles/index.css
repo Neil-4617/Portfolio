@@ -19,12 +19,15 @@ code {
 }
 
 /*main section*/
+
+/*project section*/
 .cards{
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100px);
-  transition: all 1s;
+  transition: all ease 1s;
 }
+
 
 .show{
   opacity: 1;

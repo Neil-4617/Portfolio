@@ -2,8 +2,6 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import IconButton from '@mui/material/IconButton'
-import Button from '@mui/material/Button'
-import SendIcon from '@mui/icons-material/Send'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import MailIcon from '@mui/icons-material/Mail'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -27,7 +25,7 @@ const FooterMobile = () => {
 						Let's Work Together
 					</Typography>
 				
-				<FooterCard>
+				{/* <FooterCard>
 						<CustomTF placeholder='your@email.com' type='email' />
 						<CustomTF
 							variant='outlined'
@@ -43,7 +41,7 @@ const FooterMobile = () => {
 							sx={{ marginTop:'1rem'}} >
 	        				Send
 	      				</Button>				
-				</FooterCard>
+				</FooterCard> */}
 				
 				<FooterCard 
 					sx={{

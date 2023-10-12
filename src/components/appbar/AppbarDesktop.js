@@ -26,7 +26,7 @@ const AppbarDesktop = () => {
 
 				>
 				<Logo alt="logo"/>
-				<Box
+				{/* <Box
 					sx={{
 						display:'flex',
 						gap: '3rem'
@@ -42,8 +42,9 @@ const AppbarDesktop = () => {
 							</Button>
 						))
 					}
-				</Box>
+				</Box> */}
 			</Toolbar>
+			
 		</AppBar>
 	)
 }

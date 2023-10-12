@@ -27,14 +27,15 @@ const Skills = () => {
 	return(
 		<Box
 			sx={{
-			width: '100%',
+			minWidth: '100%',
 			height: 'auto',
 			backgroundColor: 'secondary.dark',
 			display: 'flex',
 			flexDirection: 'column',
 			justifyContent: 'center',
 			alignItems: 'center',
-			py: '2rem',
+			py: '1.75rem',
+			px: '0.75rem',
 			gap: 1,
 			}}>
 			<Typography sx={{ color: 'white' }} variant='h4' my='2rem'>Technologies</Typography>
@@ -44,8 +45,10 @@ const Skills = () => {
 					<ListItem>
 						<ListItemIcon
 							sx={{
-								p: '1rem',
 								display:'flex',
+								width: '100%',
+								margin: '0 auto',
+								p: '0.175rem',
 								justifyContent:'space-evenly',
 								gap: 4,
 							}}>
@@ -55,21 +58,30 @@ const Skills = () => {
 											key={item} 
 											component='img' 
 											src={`../../assets/images/${item}.svg`} 
-											alt={item} 
-											height='60px'/>
+											alt={item}
+											sx={{
+												height:'3em', 
+												width:'100%',
+												flexGrow: 1,
+											}}/>
 									)
 							}
 						</ListItemIcon>
 					</ListItem>
 				</List>
 				<List>
-					<ListItem>
+					<ListItem
+						sx={{
+							px: '0.175rem'
+						}}>
 						<ListItemIcon
 							sx={{
-								p: '1rem',
 								display:'flex',
+								width: '100%',
+								margin: '0 auto',
+								p: '0.175rem',
 								justifyContent:'space-evenly',
-								gap: 4,
+								gap: 1,
 							}}>
 							{ 
 								arrSkills2.map(item =>
@@ -77,20 +89,29 @@ const Skills = () => {
 											key={item} 
 											component='img' 
 											src={`../../assets/images/${item}.svg`} 
-											alt={item} 
-											height='60px'/>
+											alt={item}
+											sx={{
+												height:'3em', 
+												width:'100%',
+												flexGrow: 1,
+											}}/>
 									)
 							}
-							<Box component='img' src='../../assets/images/express-svgrepo-com.svg' alt='express image' height='60px' backgroundColor='white' p='2px'/>
+							<Box component='img' src='../../assets/images/express-svgrepo-com.svg' alt='express image' height='3rem' width='100%' backgroundColor='white' p='2px'/>
 						</ListItemIcon>
 					</ListItem>
 				</List>
 				<List>
-					<ListItem>
+					<ListItem
+						sx={{
+							px: '0.175rem'
+						}}>
 						<ListItemIcon
 							sx={{
-								p: '1rem',
 								display:'flex',
+								width: '100%',
+								margin: '0 auto',
+								p: '0.175rem',
 								justifyContent:'space-evenly',
 								gap: 4,
 							}}>
@@ -100,8 +121,12 @@ const Skills = () => {
 											key={item} 
 											component='img' 
 											src={`../../assets/images/${item}.svg`} 
-											alt={item} 
-											height='60px'/>
+											alt={item}
+											sx={{
+												height:'3em', 
+												width:'100%',
+												flexGrow: 1,
+											}}/>
 									)
 							}
 						</ListItemIcon>

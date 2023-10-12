@@ -1,5 +1,5 @@
 // Dependencies
-import {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 // Context
@@ -7,7 +7,7 @@ import { UIProvider } from '../context'
 
 
 // Styles
-import theme  from '../assets/styles/theme'
+import theme from '../assets/styles/theme'
 
 // Components
 import Appbar from './appbar/Appbar'
@@ -15,25 +15,24 @@ import NavMenu from './appbar/NavMenu'
 import Banner from './banner/Banner'
 import Footer from './footer/Footer'
 
-
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<UIProvider>
 				<BrowserRouter>
-				<Box			
-					sx={{
-						width: '100vw',
-						height: '100vh',
-						display: 'flex',
-						flexDirection: 'column',
-						overflowY: 'scroll',
-					}}>	
-					<Appbar />
-					<NavMenu />
-					<Banner />
-					<Footer />
-				</Box>
+					<Box
+						sx={{
+							width: '100vw',
+							height: '100vh',
+							display: 'flex',
+							flexDirection: 'column',
+							overflowY: 'scroll',
+						}}>
+						<Appbar />
+						<NavMenu />
+						<Banner />
+						<Footer />
+					</Box>
 				</BrowserRouter>
 			</UIProvider>
 		</ThemeProvider>

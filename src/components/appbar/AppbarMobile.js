@@ -34,12 +34,13 @@ const AppbarMobile = () => {
 					}}
 					>
 					<Logo />
-					<Box>
+					{/* <Box>
 						<IconButton color='secondary' sx={{visibility: showNavMenu ? 'hidden':'visible' }} onClick = {() => setShowNavMenu(!showNavMenu) }>
 							<MenuIcon />
 						</IconButton>
-					</Box>
+					</Box> */}
 				</Toolbar>
+
 			</AppBar>
 	)
 }
