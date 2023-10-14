@@ -12,6 +12,12 @@ import Button from '@mui/material/Button'
 const ProjectCard = () => {
 	const arrProjects = [
 			{
+				title:'FunAHone', 
+				imgPath:'./assets/images/screenshot-FunAHone.png',
+				link:'http://funahone.liveblog365.com/',
+				description: 'A simple project management appA simple app that provide project details.'
+			},
+			{
 				title:'Eco Farm Resort', 
 				imgPath:'./assets/images/screenshot-ecofarm.jpg',
 				link:'https://eco-farm-resort.netlify.app/',
@@ -47,6 +53,7 @@ const ProjectCard = () => {
 					spacing={4}
 					justifyContent='center'
 					alignItems='center'
+					paddingX={2}
 					>
 				{
 					arrProjects.map((project, index) =>
