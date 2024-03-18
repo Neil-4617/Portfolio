@@ -12,10 +12,10 @@ import Button from '@mui/material/Button'
 const ProjectCard = () => {
 	const arrProjects = [
 			{
-				title:'FunAHone', 
-				imgPath:'./assets/images/screenshot-FunAHone.png',
-				link:'http://funahone.liveblog365.com/',
-				description: 'A simple project management appA simple app that provide project details.'
+				title:'Fusebax', 
+				imgPath:'https://res.cloudinary.com/dt6gbs9up/image/upload/v1710822922/fusebax/Fusebax_g35rj2.png',
+				link:'https://fusebax-production.up.railway.app/',
+				description: 'An simple ID generator app.'
 			},
 			{
 				title:'Eco Farm Resort', 
